@@ -17,5 +17,5 @@ VALUES
 INSERT INTO
   tenants
 VALUES
-  ( default, 'Kaylyn', 1 ),
-  ( default, 'Keith', 1 );
+  ( default, 'Kaylyn', 1, 1 ),
+  ( default, 'Keith', 1, 1 );

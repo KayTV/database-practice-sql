@@ -14,5 +14,6 @@ CREATE TABLE units (
 CREATE TABLE tenants (
   id serial primary key,
   name varchar(80),
+  apartment_building integer REFERENCES apartments(id),
   unit_live integer REFERENCES units(id)
 );
