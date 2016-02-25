@@ -1,12 +1,14 @@
 CREATE TABLE apartments (
   id serial primary key,
-  building_name varchar(80)
+  building_name varchar(80),
+  location text
 );
 
 CREATE TABLE units (
   id serial primary key,
   unit_num integer,
-  apartment_building text REFERENCES apartments(id)
+  bedroom integer,
+  apartment_building integer REFERENCES apartments(id)
 );
 
 CREATE TABLE tenants (
